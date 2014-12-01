@@ -2,6 +2,7 @@ body {
   font-family: Helvetica neue;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 * {
   box-sizing: border-box;
@@ -40,22 +41,32 @@ div.container div.details {
   float: right;
   width: 400px;
   height: 600px;
+  font-weight: 300;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+div.container div.details .info-line {
+  margin: 4px 0px;
 }
 div.container div.details h3 {
   font-weight: 300;
 }
+div.container div.details h3 .title {
+  font-weight: 500;
+  font-style: italic;
+}
 .negative {
-  color: #ff0000;
+  color: #D84315;
 }
 .positive {
-  color: #00ff2b;
+  color: #4CAF50;
 }
 .neutral {
   color: #c5c2d6;
 }
 .number {
   float: right;
+  padding-right: 50px;
+  font-weight: 600;
 }
 svg text.term {
   cursor: hand;

@@ -27959,20 +27959,20 @@ var Details = React.createClass({displayName: 'Details',
     if (topic) {
       return (
         React.createElement("div", {className: "details"}, 
-          React.createElement("h3", null, strings.det_title, " \"", topic.label, "\""), 
-          React.createElement("div", null, 
+          React.createElement("h3", null, strings.det_title, ": ", React.createElement("span", {className: "title"}, "\"", topic.label, "\"")), 
+          React.createElement("div", {className: "info-line"}, 
             strings.tot_mentions, ":", 
             React.createElement("span", {className: "total number"}, topic.volume || 0)
           ), 
-          React.createElement("div", null, 
+          React.createElement("div", {className: "info-line"}, 
             strings.pos_mentions, ":", 
             React.createElement("span", {className: "positive number"}, topic.sentiment.positive || 0)
           ), 
-          React.createElement("div", null, 
+          React.createElement("div", {className: "info-line"}, 
             strings.neu_mentions, ":", 
             React.createElement("span", {className: "neutral number"}, topic.sentiment.neutral || 0)
           ), 
-          React.createElement("div", null, 
+          React.createElement("div", {className: "info-line"}, 
             strings.neg_mentions, ":", 
             React.createElement("span", {className: "negative number"}, topic.sentiment.negative || 0)
           )
@@ -29086,7 +29086,7 @@ module.exports={
         },
         {
             "id": "1751295897__Patrick GrÃ¤ser",
-            "label": "Patrick GrÃ¤ser",
+            "label": "Patrick Gräser",
             "volume": 6,
             "type": "topic",
             "sentiment": {
@@ -29812,7 +29812,7 @@ var maxVolume = d3.max(topics, function(d) {return d.volume});
 function fontSize(topic) {
   var step = maxVolume / 6 | 0; // six different fontSizes
   var fontSize = 14;
-  var sizeStep = 10;
+  var sizeStep = 11;
   var volume = topic.volume;
   var search = 0;
   while (search < volume) {
@@ -29823,6 +29823,7 @@ function fontSize(topic) {
   topic.fontSize = fontSize;
 }
 
+// set the fontsize on each
 topics.map(fontSize);
 
 
@@ -29883,10 +29884,10 @@ module.exports = {
         .style("fill", function(d) {
           if (d.sentimentScore < 40) {
             // red
-            return "hsl(360, 100%, 50%)";
+            return "#D84315";
           } else if (d.sentimentScore > 60) {
             // green
-            return "hsl(130, 100%, 50%)";
+            return "#4CAF50";
           } else {
             // grey
             return "hsl(250, 20%, 80%)";
