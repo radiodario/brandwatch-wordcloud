@@ -29850,7 +29850,7 @@ module.exports = {
       .text(function(d) {
         return d.label;
       })
-      .font("Helvetica Neue")
+      .font("Roboto")
       .fontSize(function(d) {
         return d.fontSize;
       })
@@ -29877,7 +29877,7 @@ module.exports = {
       .enter()
         .append("text")
         .attr("class", "term")
-        .style("font-family", "Helvetica Neue")
+        .style("font-family", "Roboto")
         .style("font-size", function(d) {
           return d.size + "px";
         })
