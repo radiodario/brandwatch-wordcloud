@@ -47,6 +47,9 @@ div.container div.details {
 div.container div.details .info-line {
   margin: 4px 0px;
 }
+div.container div.details .info-line.total {
+  margin-bottom: 14px;
+}
 div.container div.details h3 {
   font-weight: 300;
 }

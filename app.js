@@ -27960,7 +27960,7 @@ var Details = React.createClass({displayName: 'Details',
       return (
         React.createElement("div", {className: "details"}, 
           React.createElement("h3", null, strings.det_title, ": ", React.createElement("span", {className: "title"}, "\"", topic.label, "\"")), 
-          React.createElement("div", {className: "info-line"}, 
+          React.createElement("div", {className: "info-line total"}, 
             strings.tot_mentions, ":", 
             React.createElement("span", {className: "total number"}, topic.volume || 0)
           ), 
