@@ -12,7 +12,7 @@ var maxVolume = d3.max(topics, function(d) {return d.volume});
 function fontSize(topic) {
   var step = maxVolume / 6 | 0; // six different fontSizes
   var fontSize = 14;
-  var sizeStep = 10;
+  var sizeStep = 11;
   var volume = topic.volume;
   var search = 0;
   while (search < volume) {
@@ -23,6 +23,7 @@ function fontSize(topic) {
   topic.fontSize = fontSize;
 }
 
+// set the fontsize on each
 topics.map(fontSize);
 
 

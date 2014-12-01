@@ -12,20 +12,20 @@ var Details = React.createClass({
     if (topic) {
       return (
         <div className="details">
-          <h3>{strings.det_title} "{topic.label}"</h3>
-          <div>
+          <h3>{strings.det_title}: <span className="title">"{topic.label}"</span></h3>
+          <div className="info-line">
             {strings.tot_mentions}:
             <span className="total number">{topic.volume || 0}</span>
           </div>
-          <div>
+          <div className="info-line">
             {strings.pos_mentions}:
             <span className="positive number">{topic.sentiment.positive || 0}</span>
           </div>
-          <div>
+          <div className="info-line">
             {strings.neu_mentions}:
             <span className="neutral number">{topic.sentiment.neutral || 0}</span>
           </div>
-          <div>
+          <div className="info-line">
             {strings.neg_mentions}:
             <span className="negative number">{topic.sentiment.negative || 0}</span>
           </div>
