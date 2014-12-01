@@ -83,10 +83,10 @@ module.exports = {
         .style("fill", function(d) {
           if (d.sentimentScore < 40) {
             // red
-            return "hsl(360, 100%, 50%)";
+            return "#D84315";
           } else if (d.sentimentScore > 60) {
             // green
-            return "hsl(130, 100%, 50%)";
+            return "#4CAF50";
           } else {
             // grey
             return "hsl(250, 20%, 80%)";
