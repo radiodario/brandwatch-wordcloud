@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "d3": "^3.4.13",
+    "d3.layout.cloud": "https://github.com/jasondavies/d3-cloud/tarball/master",
     "react": "^0.12.1"
   },
   "devDependencies": {
