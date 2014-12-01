@@ -1,0 +1,67 @@
+body {
+  font-family: Helvetica neue;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+div.header {
+  height: 75px;
+  width: 100%;
+  background-color: #4285f4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+div.header div.titleBox {
+  width: 1200px;
+  margin: 0 auto;
+}
+div.header div.titleBox h1 {
+  color: white;
+  font-weight: 300;
+  line-height: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.container {
+  width: 1200px;
+  margin: auto;
+  backgorund-color: #fafafa;
+}
+div.container div.wordcloud {
+  float: left;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 800px;
+  height: 600px;
+}
+div.container div.details {
+  color: #333;
+  padding: 40px;
+  float: right;
+  width: 400px;
+  height: 600px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+div.container div.details h3 {
+  font-weight: 300;
+}
+.negative {
+  color: #ff0000;
+}
+.positive {
+  color: #00ff2b;
+}
+.neutral {
+  color: #c5c2d6;
+}
+.number {
+  float: right;
+}
+svg text.term {
+  cursor: hand;
+  cursor: pointer;
+  font-weight: 300;
+}
+svg text.term:hover {
+  font-weight: 600;
+}
