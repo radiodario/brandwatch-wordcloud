@@ -13,7 +13,7 @@ var Details = React.createClass({
       return (
         <div className="details">
           <h3>{strings.det_title}: <span className="title">"{topic.label}"</span></h3>
-          <div className="info-line">
+          <div className="info-line total">
             {strings.tot_mentions}:
             <span className="total number">{topic.volume || 0}</span>
           </div>
