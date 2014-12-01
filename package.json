@@ -18,7 +18,8 @@
     "url": "git://github.com/radiodario/brandwatch-wordcloud.git"
   },
   "dependencies": {
-
+    "d3": "^3.4.13",
+    "react": "^0.12.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
